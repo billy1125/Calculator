@@ -101,6 +101,7 @@ namespace Calculator
             this.btnDivide.TabIndex = 4;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btnPlus
             // 
@@ -111,6 +112,7 @@ namespace Calculator
             this.btnPlus.TabIndex = 8;
             this.btnPlus.Text = "*";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnSix
             // 
@@ -154,6 +156,7 @@ namespace Calculator
             this.btnMinus.TabIndex = 12;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // btnThree
             // 
@@ -197,6 +200,7 @@ namespace Calculator
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEqual
             // 
@@ -207,6 +211,7 @@ namespace Calculator
             this.btnEqual.TabIndex = 15;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnZero
             // 
@@ -236,6 +241,7 @@ namespace Calculator
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(509, 50);
             this.txtNumber.TabIndex = 17;
+            this.txtNumber.Text = "0";
             // 
             // Form1
             // 
