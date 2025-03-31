@@ -57,6 +57,7 @@
             this.btnClear.TabIndex = 0;
             this.btnClear.Text = "AC";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // txtNumber
             // 
@@ -65,6 +66,7 @@
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(479, 71);
             this.txtNumber.TabIndex = 1;
+            this.txtNumber.Text = "0";
             this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnSeven
@@ -109,6 +111,7 @@
             this.btnDivide.TabIndex = 5;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btnPlus
             // 
@@ -119,6 +122,7 @@
             this.btnPlus.TabIndex = 9;
             this.btnPlus.Text = "*";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnSix
             // 
@@ -162,6 +166,7 @@
             this.btnMinus.TabIndex = 13;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // btnThree
             // 
@@ -205,6 +210,7 @@
             this.btnAdd.TabIndex = 17;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEqual
             // 
@@ -215,6 +221,7 @@
             this.btnEqual.TabIndex = 16;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnZero
             // 
