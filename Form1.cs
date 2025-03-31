@@ -149,6 +149,15 @@ namespace Calculator
                     break;
             }
 
+            //if (operators == 0)
+            //    finalResults = firstNumber + secondNumber;
+            //if (operators == 1)
+            //    finalResults = firstNumber - secondNumber;
+            //if (operators == 2)
+            //    finalResults = firstNumber * secondNumber;
+            //if (operators == 3)
+            //    finalResults = firstNumber / secondNumber;
+
             txtNumber.Text = string.Format("{0:0.##########}", finalResults); //在輸入文字框中，顯示最後計算結果，並且轉換成格式化的字串內容
 
             //重置所有全域變數
@@ -157,10 +166,26 @@ namespace Calculator
             operators = -1;
         }
 
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            //if (txtNumber.Text.Contains(".") == false)
+            //{
+            //    txtNumber.Text = txtNumber.Text + ".";
+            //}
+
+            // 確認輸入文字框中完全沒有小數點
+            if (txtNumber.Text.IndexOf(".") == -1)
+                txtNumber.Text = txtNumber.Text + ".";
+        }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtNumber.Text = "0";
+
+            //重置所有全域變數
+            firstNumber = 0f;
+            secondNumber = 0f;
+            operators = -1;
         }
     }
 }
